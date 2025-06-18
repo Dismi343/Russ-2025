@@ -18,7 +18,7 @@ function PhotoSlider(){
 
     ];
 
-    const duplicateImg=[...img,...img];
+    const duplicateImg=[...img,...img,...img,...img,...img,...img];
 
     return(
         <>
