@@ -37,7 +37,7 @@ function PhotoSlider(){
                         <img 
                         src={image.src} 
                         alt={image.alt} 
-                        className="md:h-[300px] w-full h-48  object-cover transition-transform duration-300  "
+                        className="md:h-[200px] w-full h-48  object-cover transition-transform duration-300  "
                         loading="lazy"
                         />
               </div>
@@ -62,7 +62,7 @@ function PhotoSlider(){
                         <img 
                         src={image.src} 
                         alt={image.alt} 
-                        className="md:h-[300px] w-full h-48  object-cover transition-transform duration-300 "
+                        className="md:h-[200px] w-full h-48  object-cover transition-transform duration-300 "
                         loading="lazy"
                         />
               </div>

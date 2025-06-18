@@ -13,10 +13,10 @@ function NavBar(){
     return (
         <>
         {/* desktop view */}
-         <nav className={`fixed  z-30 px-10  text-xl   py-4 shadow-xl shadow-[#9685C6]/25  border rounded-full mx-10 bg-white/50 hidden md:block`}>
-            <Link to="/" className=" w-20 h-10    hover:duration-150 hover:text-[#E2AFAA]  text-center mx-20 text-white" >Home</Link>
-            <Link to="/programm" className="w-20 h-10  hover:duration-150 hover:text-[#E2AFAA] text-center  mx-20 text-white">Programm</Link>
-            <Link to="/team" className="w-20 h-10  hover:duration-150 hover:text-[#E2AFAA] text-center  mx-20 text-white">Team</Link>
+         <nav className={`fixed  z-30 px-10  text-xl   py-4 shadow-xl shadow-[#9685C6]/25  border rounded-full mx-10 bg-white/75 hidden md:block`}>
+            <Link to="/" className=" w-20 h-10    hover:duration-150 hover:text-[#E2AFAA]  text-center mx-20 text-black" >Home</Link>
+            <Link to="/programm" className="w-20 h-10  hover:duration-150 hover:text-[#E2AFAA] text-center  mx-20 text-black">Programm</Link>
+            <Link to="/team" className="w-20 h-10  hover:duration-150 hover:text-[#E2AFAA] text-center  mx-20 text-black">Team</Link>
            </nav> 
 
            {/* mobile view */}
