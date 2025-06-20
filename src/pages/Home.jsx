@@ -2,12 +2,13 @@ import PhotoSlider from "../components/PhotoSilder";
 import { useState,useEffect } from "react";
 import CalendarMonthOutlinedIcon from '@mui/icons-material/CalendarMonthOutlined';
 import LocationOnOutlinedIcon from '@mui/icons-material/LocationOnOutlined';
-import ConferenceSpeakers from "./ConferenceSpeakers";
+import ConferenceSpeakers from "../components/ConferenceSpeakers";
 
 function Home(){
 
     const [visible,setVisible]=useState(false);
     const[slide,setSlide]=useState(false);
+    const[hr,setHr]=useState(false);
 
      useEffect(()=>{
            const timer=setTimeout(() => {
@@ -27,6 +28,12 @@ function Home(){
                             }else(
                                 setSlide(false)
                             )
+                    const hr=document.getElementById("hr")?.offsetTop||0
+                    if(Scrollposition > hr){
+                        setHr(true)
+                    }else(
+                                setHr(false)
+                    )
                 }
                 window.addEventListener('scroll', handlScroll)
                 handlScroll()
@@ -70,15 +77,25 @@ function Home(){
         </div>    
         </div>
 
-        <div  className="flex-col items-center mt-15  ">
+        <div  className="flex-col items-center mt-30  ">
                     <h1 id='st-section' className={`font-semibold  lg:text-[40px] text-[18px] text-center transition-all duration-1500 ease-out delay-100 text-[20px]  ${slide ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'} `} >Ruhuna Undergraduate Science Symposium</h1>
                     
-                    <p id='st-section' className={`text-center px-10 mt-8 transition-all duration-1500 ease-out delay-1000 text-[15px] md:text-[20px] ${slide ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>RUSS 2025 is organized by the Faculty of Science, University of Ruhuna. This aims to provide a premier multidisciplinary forum for undergraduate researchers to present their research findings, innovations, practical challenges encountered and the solutions adopted in the fields of Science & Technology.</p>
+                    <p id='st-section' className={`text-center px-10 mt-15 transition-all duration-1500 ease-out delay-100 text-[15px] md:text-[20px] ${slide ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>RUSS 2025 is organized by the Faculty of Science, University of Ruhuna. This aims to provide a premier multidisciplinary forum for undergraduate researchers to present their research findings, innovations, practical challenges encountered and the solutions adopted in the fields of Science & Technology.</p>
         </div>
         
             <PhotoSlider/>
             <ConferenceSpeakers />
-             
+            
+            <div className="w-full h-96 mt-30">
+                <p className=" text-4xl text-center">Timeline will be added</p>
+            </div>
+            
+                     <hr id='hr' class={`w-4/5 bg-blue-500 mx-auto my-6 transision-all duration-1500 ease-out delay-200 ${hr?' opacity-100 scale-100' : ' opacity-0 scale-0'}`} />
+           
+           
+        <div className="w-full h-96 mt-30">
+                
+            </div>
         </>
     );
 }

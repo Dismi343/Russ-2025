@@ -44,7 +44,7 @@ function PhotoSlider(){
             
           
          <div className="relative  gap-4 hover:pause-animation overflow-hidden">
-                <div className="flex gap-4 animate-scrollL mt-10 animate-none">
+                <div className="flex gap-4 animate-scrollL mt-20 animate-none">
                     {duplicateImg.map((image,index) => (
                     <div
                     key={index}

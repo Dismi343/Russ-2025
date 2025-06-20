@@ -34,10 +34,10 @@
 }
 
 .animate-scrollL {
-  animation: scrollL 30s linear infinite;
+  animation: scrollL 20s linear infinite;
 }
 .animate-scrollR {
-  animation: scrollR 30s linear infinite;
+  animation: scrollR 20s linear infinite;
 }
 
 .animate-scrollL:hover,
