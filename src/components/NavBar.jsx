@@ -23,11 +23,14 @@ function NavBar(){
     return (
         <>
         {/* desktop view */}
-         <nav className={`fixed  z-30 px-10  text-xl   py-4 shadow-xl shadow-[#9685C6]/25  border rounded-full mx-10 bg-white/75 hidden md:block transition-all duration-1500 ease-out  ${visible ? 'translate-y-0 opacity-100' : 'translate-y-5 opacity-0'}`}>
-            <Link to="/" className=" w-20 h-10    hover:duration-150 hover:underline  text-center mx-20 text-black" >Home</Link>
-            <Link to="/programm" className="w-20 h-10  hover:duration-150 hover:underline text-center  mx-20 text-black">Program</Link>
-            <Link to="/team" className="w-20 h-10  hover:duration-150 hover:underline text-center  mx-20 text-black">Team</Link>
+       
+        <nav className={`fixed w-full z-30 text-lg py-2 shadow-xl shadow-[#9685C6]/25 bg-white/75 hidden md:block `}>
+            <Link  to="/" className={`ml-20 w-20 h-10    hover:duration-150 hover:underline  text-center mx-10 text-black transition-all duration-1500 ease-out  ${visible ? 'translate-y-0 opacity-100' : 'translate-y-5 opacity-0'}`} >Home</Link>
+            <Link  to="/programm" className={` w-20 h-10    hover:duration-150 hover:underline  text-center mx-10 text-black transition-all duration-1500 ease-out  ${visible ? 'translate-y-0 opacity-100' : 'translate-y-5 opacity-0'}`}>Program</Link>
+            <Link  to="/team" className={` w-20 h-10    hover:duration-150 hover:underline  text-center mx-10 text-black transition-all duration-1500 ease-out  ${visible ? 'translate-y-0 opacity-100' : 'translate-y-5 opacity-0'}`}>Team</Link>
            </nav> 
+        
+        
 
            {/* mobile view */}
             <nav className={`fixed top-0 left-0 w-full md:hidden z-30 transition-transform duration-500 ${visible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
