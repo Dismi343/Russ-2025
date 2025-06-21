@@ -3,7 +3,7 @@ import { useState,useEffect } from "react";
 const SpeakerCard=({member,slide})=>{
     return(
 
-    <div className={`bg-white overflow-hidden w-full md:h-50 h-80  rounded-xl md:flex  transition-all duration-1500 ease-out delay-400 ${slide? 'translate-y-0 opacity-100 scale-100':'translate-y-15 opacity-0 scale-0'} `}>
+    <div className={`bg-white overflow-hidden w-full md:h-50 h-80  rounded-xl md:flex shadow-2xl  transition-all duration-1500 ease-out delay-400 ${slide? 'translate-y-0 opacity-100 scale-100':'translate-y-15 opacity-0 scale-0'} `}>
         <div className="md:w-1/2 flex items-center justify-center ">
             <img src={member.img} alt="test" className="md:w-40 md:h-40 w-35 h-35 rounded-full "/>
         </div>
@@ -59,7 +59,7 @@ const ConferenceSpeakers=()=>{
             },[])
     return(
         <>
-        <div id='confer-section' className={` w-full p-10 bg-[#4c4e82] mt-30 pb-30 transition-all duration-1500 ease-out delay-100 text-[20px] text-white  ${slide ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'} `}>
+        <div id='confer-section' className={` shadow-2xl w-full p-10 bg-[#4c4e82] mt-30 pb-30 transition-all duration-1500 ease-out delay-100 text-[20px] text-white  ${slide ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'} `}>
          <p className={`pt-8    text-center font-semibold text-[20px] md:text-[40px] transition-all duration-1500 ease-out delay-300 ${slide? 'translate-y-0 opacity-100 text-white scale-100':'-translate-y-40 opacity-0 text-black scale-50'} ` }>Meet the Conference Speakes</p>
         
         

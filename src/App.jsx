@@ -5,6 +5,7 @@ import Home from './pages/Home.jsx';
 import Programm from './pages/Programm.jsx';
 import Team from './pages/Team.jsx';
 import NavBar from './components/NavBar.jsx';
+import AuthorInstructions from './pages/AuthorInstructions.jsx';
 function App() {
   return (
     <>
@@ -17,6 +18,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/programm" element={<Programm />} />
         <Route path="/team" element={<Team />} />
+        <Route path='/author-instructions' element={<AuthorInstructions/>}/>
       </Routes>
      </Router>
    
