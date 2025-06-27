@@ -5,19 +5,20 @@ import Home from './pages/Home.jsx';
 import Programm from './pages/Programm.jsx';
 import Team from './pages/Team.jsx';
 import NavBar from './components/NavBar.jsx';
+import AuthorInstructions from './pages/AuthorInstructions.jsx';
 function App() {
   return (
     <>
     
      <Router>
-      <div className='bg-[#080A45] pt-10 flex justify-center'>
-    <NavBar />
-      </div>
       
+    <NavBar />
+            
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/programm" element={<Programm />} />
         <Route path="/team" element={<Team />} />
+        <Route path='/author-instructions' element={<AuthorInstructions/>}/>
       </Routes>
      </Router>
    
