@@ -19,6 +19,8 @@ function App() {
         <Route path="/programm" element={<Programm />} />
         <Route path="/team" element={<Team />} />
         <Route path='/author-instructions' element={<AuthorInstructions/>}/>
+        <Route path='/sponsors' element={<AuthorInstructions/>}/>
+        <Route path='/register' element={<AuthorInstructions/>}/>
       </Routes>
      </Router>
    
