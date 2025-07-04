@@ -28,20 +28,20 @@ function NavBar(){
         <>
         {/* desktop view */}
        
-        <nav className={`fixed w-full z-30 text-lg py-3  shadow-xl shadow-[#9685C6]/25 bg-black/75 hidden md:block font-figtree `}>
+        <nav className={`fixed w-full z-30 lg:text-lg text-md lg:py-3 py-1 shadow-xl shadow-[#9685C6]/25 bg-black/75 hidden md:block font-figtree `}>
             <div className="flex items-center justify-between">
                 <div className="flex items-center">
                     <Link  to="/" className={`ml-10 w-10 h-10 hover:duration-150 hover:underline transition-all duration-1500 ease-out ${visible ? 'translate-y-0 opacity-100' : 'translate-y-5 opacity-0'}`} >
                         <img src={logo} alt="Logo" className="w-full h-full object-cover rounded" />
                     </Link>
-                    <Link  to="/" className={`ml-4 hover:duration-150   text-center mx-10 text-white transition-all duration-1500 ease-out font-bold text-4xl  ${visible ? 'translate-y-0 opacity-100' : 'translate-y-5 opacity-0'}`} >RIUSS</Link>
+                    <Link  to="/" className={`ml-4 hover:duration-150   text-center lg:mx-10 mx-4 text-white transition-all duration-1500 ease-out font-bold text-4xl  ${visible ? 'translate-y-0 opacity-100' : 'translate-y-5 opacity-0'}`} >RIUSS</Link>
                     <Link  to="/" className={`hover:duration-150 hover:underline  text-center mx-10 transition-all duration-1500 ease-out ${location.pathname === '/' ? 'text-[#CC27FF]' : 'text-white'} ${visible ? 'translate-y-0 opacity-100' : 'translate-y-5 opacity-0'}`} >Home</Link>
                     <Link  to="/programm" className={`hover:duration-150 hover:underline  text-center mx-10 transition-all duration-1500 ease-out ${location.pathname === '/programm' ? 'text-[#CC27FF]' : 'text-white'} ${visible ? 'translate-y-0 opacity-100' : 'translate-y-5 opacity-0'}`}>Program</Link>
                     <Link  to="/author-instructions" className={`hover:duration-150 hover:underline  text-center mx-10 transition-all duration-1500 ease-out ${location.pathname === '/author-instructions' ? 'text-[#CC27FF]' : 'text-white'} ${visible ? 'translate-y-0 opacity-100' : 'translate-y-5 opacity-0'}`}>Instructions</Link>
                     <Link  to="/team" className={`hover:duration-150 hover:underline  text-center mx-10 transition-all duration-1500 ease-out ${location.pathname === '/team' ? 'text-[#CC27FF]' : 'text-white'} ${visible ? 'translate-y-0 opacity-100' : 'translate-y-5 opacity-0'}`}>Team</Link>
                     <Link  to="/sponsors" className={`hover:duration-150 hover:underline  text-center mx-10 transition-all duration-1500 ease-out ${location.pathname === '/sponsors' ? 'text-[#CC27FF]' : 'text-white'} ${visible ? 'translate-y-0 opacity-100' : 'translate-y-5 opacity-0'}`}>Sponsors</Link>
                 </div>
-                <button  className={`mr-10 w-40 h-10 bg-[#6F0790] hover:duration-150 rounded-3xl hover:cursor-pointer  text-center transition-all duration-1500 ease-out  text-white ${visible ? 'translate-y-0 opacity-100' : 'translate-y-5 opacity-0'}`} onClick={()=>{console.log("clicked")}}>Register now</button>
+                <button  className={`mr-10 w-40 lg:h-10 h-20  bg-[#6F0790] hover:duration-150 rounded-3xl hover:cursor-pointer  text-center transition-all duration-1500 ease-out  text-white ${visible ? 'translate-y-0 opacity-100' : 'translate-y-5 opacity-0'}`} onClick={()=>{console.log("clicked")}}>Register now</button>
             </div>
            </nav> 
         
