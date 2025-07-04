@@ -59,7 +59,7 @@ const ConferenceSpeakers=()=>{
             },[])
     return(
         <>
-        <div id='confer-section' className={` shadow-2xl w-full p-10 bg-[#4c4e82] mt-30 pb-30 transition-all duration-1500 ease-out delay-100 text-[20px] text-white  ${slide ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'} `}>
+        <div id='confer-section' className={` shadow-2xl w-full p-10 bg-[#6F0790]  pb-30 transition-all duration-1500 ease-out delay-100 text-[20px] text-white  ${slide ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'} `}>
          <p className={`pt-8    text-center font-semibold text-[20px] md:text-[40px] transition-all duration-1500 ease-out delay-300 ${slide? 'translate-y-0 opacity-100 text-white scale-100':'-translate-y-40 opacity-0 text-black scale-50'} ` }>Meet the Conference Speakes</p>
         
         
